@@ -8,6 +8,6 @@ urlpatterns = patterns('',
                 {'document_root': os.path.join(settings.BASE_PATH, 'media')}),
 )
 
-urlpatterns += patterns('views',
+urlpatterns += patterns('socketio_example.views',
     (r'^socket\.io', 'socketio'),
 )
